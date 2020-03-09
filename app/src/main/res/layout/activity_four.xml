@@ -2,27 +2,68 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/lin1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:id="@+id/lin1">
+        android:layout_height="match_parent">
         <ImageView
             android:id="@+id/view1"
+            android:layout_gravity="center"
             android:layout_width="350dp"
             android:layout_height="350dp"
             android:src="@drawable/first"/>
-
+        <ImageView
+            android:id="@+id/view2"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/second"/>
+        <ImageView
+            android:id="@+id/view3"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/thired"/>
+        <ImageView
+            android:id="@+id/view4"
+            android:layout_gravity="center"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/forth"/>
+        <ImageView
+            android:id="@+id/view5"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/fifth"/>
         <Button
+            android:layout_gravity="center_horizontal"
             android:id="@+id/button5"
             android:layout_width="326dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="500dp"
             android:layout_height="wrap_content"
             android:text="返回" />
-    </LinearLayout>
+    </FrameLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:id="@+id/lin1">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/view1"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="350dp"-->
+<!--            android:src="@drawable/first"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/button5"-->
+<!--            android:layout_width="326dp"-->
+<!--            android:layout_marginTop="80dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="返回" />-->
+<!--    </LinearLayout>-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

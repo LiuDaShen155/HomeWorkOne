@@ -5,7 +5,8 @@
     android:layout_height="match_parent">
 <TableLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
     <TableRow android:layout_marginBottom="40dp">
         <Button android:text="第一个Button" />
         <Button android:text="第二个Button" />
@@ -15,6 +16,7 @@
     <TableRow>
         <Button android:text="第四个Button"/>
     </TableRow>
+
     <Button
         android:id="@+id/button5"
         android:layout_marginTop="300dp"

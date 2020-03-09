@@ -5,10 +5,11 @@
     android:layout_height="match_parent">
     <GridLayout
         android:layout_height="match_parent"
+        android:layout_width="match_parent"
         android:rowCount="6"
         android:columnCount="3"
         android:orientation="horizontal"
-        android:layout_width="match_parent">
+        >
 
         <Button
             android:layout_height="wrap_content"
@@ -36,6 +37,7 @@
             android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="3" />
         <Button
             android:layout_height="wrap_content"
@@ -63,6 +65,7 @@
             android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="6" />
         <Button
             android:layout_height="wrap_content"
@@ -90,6 +93,7 @@
             android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="9" />
         <Button
             android:layout_height="wrap_content"
@@ -117,6 +121,7 @@
             android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="-" />
         <Button
             android:layout_height="wrap_content"
@@ -144,6 +149,7 @@
             android:layout_columnWeight="1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
             android:text="=" />
 
 

@@ -7,6 +7,7 @@ import android.os.Message;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -21,9 +22,13 @@ import javax.net.ssl.HandshakeCompletedListener;
 public class FourActivity extends AppCompatActivity {
 
 
-    private LinearLayout linearlayout;
+    private FrameLayout linearlayout;
 
     private ImageView main_imageview;
+    private ImageView img2;
+    private ImageView img3;
+    private ImageView img4;
+    private ImageView img5;
 
     private int i = 0;
 
@@ -47,18 +52,38 @@ public class FourActivity extends AppCompatActivity {
                 {
                     case 1:
                         main_imageview.setImageResource(R.drawable.first);
+                        img2.setImageResource(R.drawable.second);
+                        img3.setImageResource(R.drawable.thired);
+                        img4.setImageResource(R.drawable.forth);
+                        img5.setImageResource(R.drawable.fifth);
                         break;
                     case 2:
                         main_imageview.setImageResource(R.drawable.second);
+                        img2.setImageResource(R.drawable.thired);
+                        img3.setImageResource(R.drawable.forth);
+                        img4.setImageResource(R.drawable.fifth);
+                        img5.setImageResource(R.drawable.first);
                         break;
                     case 3:
                         main_imageview.setImageResource(R.drawable.thired);
+                        img2.setImageResource(R.drawable.forth);
+                        img3.setImageResource(R.drawable.fifth);
+                        img4.setImageResource(R.drawable.first);
+                        img5.setImageResource(R.drawable.second);
                         break;
                     case 4:
                         main_imageview.setImageResource(R.drawable.forth);
+                        img2.setImageResource(R.drawable.fifth);
+                        img3.setImageResource(R.drawable.first);
+                        img4.setImageResource(R.drawable.second);
+                        img5.setImageResource(R.drawable.thired);
                         break;
                     case 5:
                         main_imageview.setImageResource(R.drawable.fifth);
+                        img2.setImageResource(R.drawable.first);
+                        img3.setImageResource(R.drawable.second);
+                        img4.setImageResource(R.drawable.thired);
+                        img5.setImageResource(R.drawable.forth);
                         break;
                     default:
                         break;
@@ -88,9 +113,12 @@ public class FourActivity extends AppCompatActivity {
 
     public void initView()
     {
-        linearlayout = (LinearLayout) findViewById(R.id.lin1);
+        linearlayout = (FrameLayout) findViewById(R.id.lin1);
         main_imageview = (ImageView) findViewById(R.id.view1);
-
+        img2=(ImageView) findViewById(R.id.view2);
+        img3=(ImageView) findViewById(R.id.view3);
+        img4=(ImageView) findViewById(R.id.view4);
+        img5=(ImageView) findViewById(R.id.view5);
         timer.scheduleAtFixedRate(new TimerTask()
         {
             @Override
@@ -102,13 +130,15 @@ public class FourActivity extends AppCompatActivity {
                 mesasge.what = i;
                 handler.sendMessage(mesasge);
             }
-        }, 0, 700);
+        }, 0, 800);
+
+
+
     }
 
     @Override
     protected void onDestroy()
     {
-        // TODO Auto-generated method stub
         timer.cancel();
         super.onDestroy();
     }
